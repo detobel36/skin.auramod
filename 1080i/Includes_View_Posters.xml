@@ -499,7 +499,7 @@
           <visible>Container.Content(artists) | Container.Content(albums) | $EXP[Exp_IsPluginAdvancedLauncher]</visible>
           <include>View_NotTheseWindows</include>
    <control type="group">
-        <visible>String.IsEqual(ListItem.Label,See More...) | String.IsEqual(ListItem.Label,Next)</visible>
+        <visible>String.IsEqual(ListItem.Label,More...) | String.IsEqual(ListItem.Label,Next)</visible>
       <control type="image">
         <bordersize>10</bordersize>
         <texture background="true" colordiffuse="darkgrey">common/white.png</texture>
@@ -3525,7 +3525,7 @@
     <include>Defs_PictureBack</include>
     <include>View_WatchedOverlay</include>
    <control type="group">
-        <visible>String.IsEqual(ListItem.Label,See More...) | String.IsEqual(ListItem.Label,Next)</visible>
+        <visible>String.IsEqual(ListItem.Label,More...) | String.IsEqual(ListItem.Label,Next)</visible>
       <control type="image">
         <bordersize>10</bordersize>
         <texture background="true" colordiffuse="darkgrey">common/white.png</texture>
@@ -3646,7 +3646,7 @@
       </control>
 
     <control type="group">
-        <visible>String.IsEqual(ListItem.Label,See More...) | String.IsEqual(ListItem.Label,Next)</visible>
+        <visible>String.IsEqual(ListItem.Label,More...) | String.IsEqual(ListItem.Label,Next)</visible>
       <control type="image">
         <bordersize>10</bordersize>
         <texture background="true" colordiffuse="darkgrey">common/white.png</texture>
@@ -3756,7 +3756,7 @@
       <include>Defs_PictureBack</include>
     </control>
    <control type="group">
-        <visible>String.IsEqual(ListItem.Label,See More...) | String.IsEqual(ListItem.Label,Next)</visible>
+        <visible>String.IsEqual(ListItem.Label,More...) | String.IsEqual(ListItem.Label,Next)</visible>
       <control type="image">
         <bordersize>10</bordersize>
         <texture background="true" colordiffuse="darkgrey">common/white.png</texture>
