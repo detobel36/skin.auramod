@@ -2312,7 +2312,7 @@
           <param name="widgetpage_prop" value="Container(53008).WidgetPage" />
           <param name="widgetpage_nextpage_visible" value="Control.IsVisible(53008) + !Container(53008).IsUpdating + Integer.IsGreaterOrEqual(Container(53008).NumItems,20)" />
         </include>
-        <include condition="!Skin.HasSetting(VideoInfo.Disable) + !Skin.HasSetting(VideoInfo.Youtube) + String.IsEqual(Skin.String(HomeWidgetItemLimit),10)" content="Widget_TMDB">
+        <include condition="!Skin.HasSetting(VideoInfo.Disable) + !Skin.HasSetting(VideoInfo.Youtube)" content="Widget_TMDB">
           <param name="id" value="53009" />
           <param name="onleft" value="8999" />
           <param name="onup" value="8999" />
@@ -2334,31 +2334,7 @@
           <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,$LOCALIZE[31141])" /> <!-- Youtube -->
           <param name="widgetpage_value" value="$INFO[Window(Home).Property(Container(53009).WidgetPage)]" />
           <param name="widgetpage_prop" value="Container(53009).WidgetPage" />
-          <param name="widgetpage_nextpage_visible" value="Control.IsVisible(53009) + !Container(53009).IsUpdating + Integer.IsGreaterOrEqual(Container(53009).NumItems,10)" />
-        </include>
-        <include condition="!Skin.HasSetting(VideoInfo.Disable) + !Skin.HasSetting(VideoInfo.Youtube) + !String.IsEqual(Skin.String(HomeWidgetItemLimit),10)" content="Widget_TMDB">
-          <param name="id" value="53009" />
-          <param name="onleft" value="8999" />
-          <param name="onup" value="8999" />
-          <param name="target" value="videos" />
-          <param name="sortby" value="file" />
-          <param name="sortorder" value="" />
-          <param name="content" value="$VAR[Info_Youtube]" />
-          <param name="widgetContent" value="$VAR[Info_Youtube]" />
-          <param name="postercondition" value="false" />
-          <param name="landscapenetflixcondition" value="true" />
-          <param name="controltype" value="panel" />
-          <param name="orientation" value="vertical" />
-          <param name="height" value="880" />
-          <param name="width" value="1800" />
-          <param name="label" value="" />
-          <param name="onclick2" value="PlayMedia($INFO[Container(53007).ListItem.FileNameAndPath],1)" />
-          <param name="onclick3" value="SetProperty(TrailerPlaying,fullscreen,home)" />
-          <param name="onclick4" value="SetProperty(BaseWindow,InfoDialog,Home)" />
-          <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,$LOCALIZE[31141])" /> <!-- Youtube -->
-          <param name="widgetpage_value" value="$INFO[Window(Home).Property(Container(53009).WidgetPage)]" />
-          <param name="widgetpage_prop" value="Container(53009).WidgetPage" />
-          <param name="widgetpage_nextpage_visible" value="Control.IsVisible(53009) + !Container(53009).IsUpdating + Integer.IsGreaterOrEqual(Container(53009).NumItems,20)" />
+          <param name="widgetpage_nextpage_visible" value="Control.IsVisible(53009) + !Container(53009).IsUpdating" />
         </include>
       </control>
     </control>
