@@ -3479,16 +3479,16 @@
         </control>
 
             <control type="group">
-                <height>70</height>
+                <height>60</height>
                 <bottom>0</bottom>
-                <visible>!Control.IsVisible(52) + !String.IsEqual(ListItem.DBType,episode) + !String.IsEqual(ListItem.DBType,season) + [!Skin.HasSetting(DisableClearlogo) | Skin.HasSetting(DisableClearlogo) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))] + !Skin.HasSetting(WidgetLabels)</visible>
-		<visible>Window.IsVisible(DialogVideoInfo.xml)</visible>
+                <visible>!Control.IsVisible(52) + !String.IsEqual(ListItem.DBType,episode) + !String.IsEqual(ListItem.DBType,season) + [!Skin.HasSetting(DisableClearlogo) | Skin.HasSetting(DisableClearlogo) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))] + !Skin.HasSetting(WidgetLabels) + !ListItem.IsParentFolder + !String.Contains(ListItem.FileNameAndPath,page)</visible>
+		<visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
                 <control type="image">
                     <texture background="true" colordiffuse="99000000" border="10" flipy="true">diffuse/halfbox.png</texture>
                 </control>
                 <control type="label">
                     <top>0</top>
-                    <bottom>0</bottom>
+                    <bottom>10</bottom>
                     <left>20</left>
                     <right>20</right>
                     <align>center</align>
