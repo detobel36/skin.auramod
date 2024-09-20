@@ -272,7 +272,7 @@
       <control type="group">
         <height>50</height>
         <bottom>0</bottom>
-        <visible>[!Skin.HasSetting(DisableClearlogo) | [Skin.HasSetting(DisableClearlogo) + [String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))]]] + !Skin.HasSetting(WidgetLabels)</visible>
+        <visible>Skin.HasSetting(EnableClearlogoText) + [!Skin.HasSetting(DisableClearlogo) | [Skin.HasSetting(DisableClearlogo) + [String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))]]] + !Skin.HasSetting(WidgetLabels)</visible>
         <control type="image">
           <texture background="true" colordiffuse="99000000" border="10" flipy="true">diffuse/halfbox.png</texture>
         </control>
@@ -414,7 +414,7 @@
       <control type="group">
         <height>50</height>
         <bottom>0</bottom>
-        <visible>[!Skin.HasSetting(DisableClearlogo) | [Skin.HasSetting(DisableClearlogo) + [String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))]]] + !Skin.HasSetting(WidgetLabels)</visible>
+        <visible>Skin.HasSetting(EnableClearlogoText) + [!Skin.HasSetting(DisableClearlogo) | [Skin.HasSetting(DisableClearlogo) + [String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))]]] + !Skin.HasSetting(WidgetLabels)</visible>
         <control type="image">
           <texture background="true" colordiffuse="99000000" border="10" flipy="true">diffuse/halfbox.png</texture>
         </control>
@@ -1135,7 +1135,7 @@
       <control type="group">
         <height>50</height>
         <bottom>0</bottom>
-        <visible>[!Skin.HasSetting(DisableClearlogo) | [Skin.HasSetting(DisableClearlogo) + [String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))]]] + !Skin.HasSetting(WidgetLabels)</visible>
+        <visible>Skin.HasSetting(EnableClearlogoText) + [!Skin.HasSetting(DisableClearlogo) | [Skin.HasSetting(DisableClearlogo) + [String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))]]] + !Skin.HasSetting(WidgetLabels)</visible>
         <control type="image">
           <texture background="true" colordiffuse="99000000" border="10" flipy="true">diffuse/halfbox.png</texture>
         </control>
@@ -1213,7 +1213,7 @@
       <control type="group">
         <height>40</height>
         <bottom>0</bottom>
-        <visible>[!Skin.HasSetting(DisableClearlogo) | [Skin.HasSetting(DisableClearlogo) + [String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))]]] + !Skin.HasSetting(WidgetLabels)</visible>
+        <visible>Skin.HasSetting(EnableClearlogoText) + [!Skin.HasSetting(DisableClearlogo) | [Skin.HasSetting(DisableClearlogo) + [String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))]]] + !Skin.HasSetting(WidgetLabels)</visible>
         <control type="image">
           <texture background="true" colordiffuse="99000000" border="10" flipy="true">diffuse/halfbox.png</texture>
         </control>
@@ -1337,7 +1337,7 @@
       <control type="group">
         <height>40</height>
         <bottom>0</bottom>
-        <visible>[!Skin.HasSetting(DisableClearlogo) | [Skin.HasSetting(DisableClearlogo) + [String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))]]] + !Skin.HasSetting(WidgetLabels)</visible>
+        <visible>Skin.HasSetting(EnableClearlogoText) + [!Skin.HasSetting(DisableClearlogo) | [Skin.HasSetting(DisableClearlogo) + [String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))]]] + !Skin.HasSetting(WidgetLabels)</visible>
         <control type="image">
           <texture background="true" colordiffuse="99000000" border="10" flipy="true">diffuse/halfbox.png</texture>
         </control>
@@ -1461,7 +1461,7 @@
       <control type="group">
         <height>40</height>
         <bottom>0</bottom>
-        <visible>[!Skin.HasSetting(DisableClearlogo) | [Skin.HasSetting(DisableClearlogo) + [String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))]]] + !Skin.HasSetting(WidgetLabels)</visible>
+        <visible>Skin.HasSetting(EnableClearlogoText) + [!Skin.HasSetting(DisableClearlogo) | [Skin.HasSetting(DisableClearlogo) + [String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))]]] + !Skin.HasSetting(WidgetLabels)</visible>
         <control type="image">
           <texture background="true" colordiffuse="99000000" border="10" flipy="true">diffuse/halfbox.png</texture>
         </control>
@@ -1696,7 +1696,7 @@
       <control type="group">
         <height>40</height>
         <bottom>0</bottom>
-        <visible>[!Skin.HasSetting(DisableClearlogo) | [Skin.HasSetting(DisableClearlogo) + [String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))]]] + !Skin.HasSetting(WidgetLabels)</visible>
+        <visible>Skin.HasSetting(EnableClearlogoText) + [!Skin.HasSetting(DisableClearlogo) | [Skin.HasSetting(DisableClearlogo) + [String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))]]] + !Skin.HasSetting(WidgetLabels)</visible>
         <control type="image">
           <texture background="true" colordiffuse="99000000" border="10" flipy="true">diffuse/halfbox.png</texture>
         </control>
@@ -2007,7 +2007,7 @@
       <control type="group">
         <height>40</height>
         <bottom>0</bottom>
-        <visible>[!Skin.HasSetting(DisableClearlogo) | [Skin.HasSetting(DisableClearlogo) + [String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))]]] + !Skin.HasSetting(WidgetLabels)</visible>
+        <visible>Skin.HasSetting(EnableClearlogoText) + [!Skin.HasSetting(DisableClearlogo) | [Skin.HasSetting(DisableClearlogo) + [String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))]]] + !Skin.HasSetting(WidgetLabels)</visible>
         <control type="image">
           <texture background="true" colordiffuse="99000000" border="10" flipy="true">diffuse/halfbox.png</texture>
         </control>

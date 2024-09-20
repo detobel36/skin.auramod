@@ -4551,3 +4551,8 @@ msgstr ""
 msgctxt "#31931"
 msgid "Episode flags"
 msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31932"
+msgid "Enable Clearlogo fallback text on Widgets"
+msgstr ""

@@ -3481,7 +3481,7 @@
             <control type="group">
                 <height>60</height>
                 <bottom>0</bottom>
-                <visible>!Control.IsVisible(52) + !String.IsEqual(ListItem.DBType,episode) + !String.IsEqual(ListItem.DBType,season) + [!Skin.HasSetting(DisableClearlogo) | Skin.HasSetting(DisableClearlogo) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))] + !Skin.HasSetting(WidgetLabels) + !ListItem.IsParentFolder + !String.Contains(ListItem.FileNameAndPath,page)</visible>
+                <visible>!Control.IsVisible(52) + !String.IsEqual(ListItem.DBType,episode) + !String.IsEqual(ListItem.DBType,season) + Skin.HasSetting(EnableClearlogoText) + [!Skin.HasSetting(DisableClearlogo) | Skin.HasSetting(DisableClearlogo) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))] + !Skin.HasSetting(WidgetLabels) + !ListItem.IsParentFolder + !String.Contains(ListItem.FileNameAndPath,page)</visible>
 		<visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
                 <control type="image">
                     <texture background="true" colordiffuse="99000000" border="10" flipy="true">diffuse/halfbox.png</texture>
