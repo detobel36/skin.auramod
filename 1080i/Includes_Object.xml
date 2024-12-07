@@ -1035,7 +1035,8 @@
       <onup condition="Skin.HasSetting(DisableMenuHor)">300</onup>
       <ondown condition="!Skin.HasSetting(DisableNetflixCatWidget) + !$EXP[noSubMenu]">30222</ondown>
       <ondown condition="!Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">30222</ondown>
-      <ondown condition="Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">329</ondown>
+      <ondown condition="!Skin.HasSetting(DisableAuraHomeLayout) + Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">329</ondown>
+      <ondown condition="Skin.HasSetting(DisableAuraHomeLayout) + Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">330</ondown>
       <onright>Control.Move(1505,1)</onright>
       <onleft>300</onleft>
       <width>600</width>
@@ -1375,7 +1376,8 @@
       <onup condition="Skin.HasSetting(DisableMenuHor)">300</onup>
       <ondown condition="!Skin.HasSetting(DisableNetflixCatWidget) + !$EXP[noSubMenu]">30222</ondown>
       <ondown condition="!Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">30222</ondown>
-      <ondown condition="Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">329</ondown>
+      <ondown condition="!Skin.HasSetting(DisableAuraHomeLayout) + Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">329</ondown>
+      <ondown condition="Skin.HasSetting(DisableAuraHomeLayout) + Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">330</ondown>
       <onright>Control.Move(1506,1)</onright>
       <onleft>300</onleft>
       <width>600</width>
