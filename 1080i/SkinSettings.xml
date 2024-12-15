@@ -1467,6 +1467,20 @@
                             <selected>!Skin.HasSetting(WidgetLabels)</selected>
                             <onclick>Skin.ToggleSetting(WidgetLabels)</onclick>
                         </control>
+                        <control type="radiobutton" id="91071" description="Display partial progress bars on landscape widgets">
+                            <visible>Integer.IsEqual(Window.Property(CurrentFocus),9011)</visible>
+                            <include>Defs_Settings_Button</include>
+                            <label>$LOCALIZE[31933]</label>
+                            <selected>Skin.HasSetting(WidgetPartialProgressBar)</selected>
+                            <onclick>Skin.ToggleSetting(WidgetPartialProgressBar)</onclick>
+                        </control>
+                        <control type="radiobutton" id="91072" description="Display completed progress bars on landscape widgets">
+                            <visible>Integer.IsEqual(Window.Property(CurrentFocus),9011)</visible>
+                            <include>Defs_Settings_Button</include>
+                            <label>$LOCALIZE[31934]</label>
+                            <selected>Skin.HasSetting(WidgetCompletedProgressBar)</selected>
+                            <onclick>Skin.ToggleSetting(WidgetCompletedProgressBar)</onclick>
+                        </control>
                        <control type="radiobutton" id="9108" description="Prefer fanart">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9011)</visible>
                             <include>Defs_Settings_Button</include>

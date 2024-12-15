@@ -4555,3 +4555,13 @@ msgstr ""
 msgctxt "#31932"
 msgid "Enable Clearlogo fallback text on Widgets"
 msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31933"
+msgid "Display partial progress bars on landscape widgets"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31934"
+msgid "Display completed progress bars on landscape widgets"
+msgstr ""

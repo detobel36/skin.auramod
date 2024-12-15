@@ -104,6 +104,7 @@
                         </control>
                         <control type="progress">
                           <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+                          <visible>Skin.HasSetting(WidgetPartialProgressBar)</visible>
                           <left>10</left>
                           <top>456</top>
                           <description>progress bar</description>
@@ -120,6 +121,7 @@
                         </control>
                         <control type="progress">
                           <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+                          <visible>Skin.HasSetting(WidgetCompletedProgressBar)</visible>
                           <left>10</left>
                           <top>456</top>
                           <description>progress bar</description>
@@ -1577,6 +1579,7 @@
               </control>
               <control type="progress">
                 <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+                <visible>Skin.HasSetting(WidgetPartialProgressBar)</visible>
                 <left>10</left>
                 <top>286</top>
                 <description>progress bar</description>
@@ -1591,7 +1594,8 @@
                 <info>ListItem.PercentPlayed</info>
               </control>
               <control type="progress">
-                <visible>!Integer.IsGreater(ListItem.PercentPlayed,0) + Integer.IsGreater(ListItem.PlayCount,0)</visible>
+                <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+                <visible>Skin.HasSetting(WidgetCompletedProgressBar)</visible>
                 <left>10</left>
                 <top>286</top>
                 <description>progress bar</description>
@@ -1689,6 +1693,7 @@
               <control type="progress">
                 <include>Animation_FocusBounce_Small</include>
                 <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+                <visible>Skin.HasSetting(WidgetPartialProgressBar)</visible>
                 <left>10</left>
                 <top>286</top>
                 <description>progress bar</description>
@@ -1705,6 +1710,7 @@
               <control type="progress">
                 <include>Animation_FocusBounce_Small</include>
                 <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+                <visible>Skin.HasSetting(WidgetCompletedProgressBar)</visible>
                 <left>10</left>
                 <top>286</top>
                 <description>progress bar</description>
@@ -1848,6 +1854,7 @@
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+            <visible>Skin.HasSetting(WidgetPartialProgressBar)</visible>
             <left>10</left>
             <top>196</top>
             <description>progress bar</description>
@@ -1864,6 +1871,7 @@
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+            <visible>Skin.HasSetting(WidgetCompletedProgressBar)</visible>
             <left>10</left>
             <top>196</top>
             <description>progress bar</description>
@@ -1907,6 +1915,7 @@
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+            <visible>Skin.HasSetting(WidgetPartialProgressBar)</visible>
             <left>10</left>
             <top>196</top>
             <description>progress bar</description>
@@ -1923,6 +1932,7 @@
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+            <visible>Skin.HasSetting(WidgetCompletedProgressBar)</visible>
             <left>10</left>
             <top>196</top>
             <description>progress bar</description>
@@ -2130,6 +2140,7 @@
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+            <visible>Skin.HasSetting(WidgetPartialProgressBar)</visible>
             <left>10</left>
             <top>336</top>
             <description>progress bar</description>
@@ -2146,6 +2157,7 @@
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+            <visible>Skin.HasSetting(WidgetCompletedProgressBar)</visible>
             <left>10</left>
             <top>336</top>
             <description>progress bar</description>
@@ -2189,6 +2201,7 @@
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+            <visible>Skin.HasSetting(WidgetPartialProgressBar)</visible>
             <left>10</left>
             <top>336</top>
             <description>progress bar</description>
@@ -2205,6 +2218,7 @@
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+            <visible>Skin.HasSetting(WidgetCompletedProgressBar)</visible>
             <left>10</left>
             <top>336</top>
             <description>progress bar</description>
@@ -2243,6 +2257,7 @@
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+            <visible>Skin.HasSetting(WidgetPartialProgressBar)</visible>
             <left>10</left>
             <top>251</top>
             <description>progress bar</description>
@@ -2259,6 +2274,7 @@
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+            <visible>Skin.HasSetting(WidgetCompletedProgressBar)</visible>
             <left>10</left>
             <top>251</top>
             <description>progress bar</description>
@@ -2336,6 +2352,7 @@
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+            <visible>Skin.HasSetting(WidgetPartialProgressBar)</visible>
             <left>10</left>
             <top>251</top>
             <description>progress bar</description>
@@ -2352,6 +2369,7 @@
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+            <visible>Skin.HasSetting(WidgetCompletedProgressBar)</visible>
             <left>10</left>
             <top>251</top>
             <description>progress bar</description>
@@ -2645,6 +2663,7 @@
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+            <visible>Skin.HasSetting(WidgetPartialProgressBar)</visible>
             <left>10</left>
             <top>286</top>
             <description>progress bar</description>
@@ -2661,6 +2680,7 @@
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+            <visible>Skin.HasSetting(WidgetCompletedProgressBar)</visible>
             <left>10</left>
             <top>286</top>
             <description>progress bar</description>
@@ -2762,6 +2782,7 @@
           <control type="progress">
             <include>Animation_FocusBounce_Small</include>
             <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+            <visible>Skin.HasSetting(WidgetPartialProgressBar)</visible>
             <left>10</left>
             <top>286</top>
             <description>progress bar</description>
@@ -2779,6 +2800,7 @@
           <control type="progress">
             <include>Animation_FocusBounce_Small</include>
             <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+            <visible>Skin.HasSetting(WidgetCompletedProgressBar)</visible>
             <left>10</left>
             <top>286</top>
             <description>progress bar</description>
