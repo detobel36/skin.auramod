@@ -9376,15 +9376,15 @@
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
-            <left>9</left>
+            <left>10</left>
             <top>286</top>
             <description>progress bar</description>
-            <width>501</width>
+            <width>498</width>
             <height>4</height>
             <align>center</align>
-            <texturebg colordiffuse="white" border="2">diffuse/progress-bg.png</texturebg>
+            <texturebg colordiffuse="white" border="0,0,0,1">diffuse/progress-bg.png</texturebg>
             <lefttexture></lefttexture>
-            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+            <midtexture colordiffuse="red" border="0,0,0,1">diffuse/progress-bg.png</midtexture>
             <righttexture></righttexture>
             <reveal>true</reveal>
             <info>ListItem.PercentPlayed</info>
@@ -9392,15 +9392,15 @@
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
-            <left>9</left>
+            <left>10</left>
             <top>286</top>
             <description>progress bar</description>
-            <width>501</width>
+            <width>498</width>
             <height>4</height>
             <align>center</align>
-            <texturebg colordiffuse="red" border="2">diffuse/progress-bg.png</texturebg>
+            <texturebg colordiffuse="red" border="0,0,0,1">diffuse/progress-bg.png</texturebg>
             <lefttexture></lefttexture>
-            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+            <midtexture colordiffuse="red" border="0,0,0,1">diffuse/progress-bg.png</midtexture>
             <righttexture></righttexture>
             <reveal>true</reveal>
             <info>ListItem.PercentPlayed</info>
@@ -9493,15 +9493,15 @@
           <control type="progress">
             <include>Animation_FocusBounce_Small</include>
             <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
-            <left>9</left>
+            <left>10</left>
             <top>286</top>
             <description>progress bar</description>
-            <width>501</width>
+            <width>498</width>
             <height>4</height>
             <align>center</align>
-            <texturebg colordiffuse="white" border="2">diffuse/progress-bg.png</texturebg>
+            <texturebg colordiffuse="white" border="0,0,0,1">diffuse/progress-bg.png</texturebg>
             <lefttexture></lefttexture>
-            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+            <midtexture colordiffuse="red" border="0,0,0,1">diffuse/progress-bg.png</midtexture>
             <righttexture></righttexture>
             <reveal>true</reveal>
             <info>ListItem.PercentPlayed</info>
@@ -9510,15 +9510,15 @@
           <control type="progress">
             <include>Animation_FocusBounce_Small</include>
             <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
-            <left>9</left>
+            <left>10</left>
             <top>286</top>
             <description>progress bar</description>
-            <width>501</width>
+            <width>498</width>
             <height>4</height>
             <align>center</align>
-            <texturebg colordiffuse="red" border="2">diffuse/progress-bg.png</texturebg>
+            <texturebg colordiffuse="red" border="0,0,0,1">diffuse/progress-bg.png</texturebg>
             <lefttexture></lefttexture>
-            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+            <midtexture colordiffuse="red" border="0,0,0,1">diffuse/progress-bg.png</midtexture>
             <righttexture></righttexture>
             <reveal>true</reveal>
             <info>ListItem.PercentPlayed</info>
