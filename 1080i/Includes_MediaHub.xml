@@ -129,7 +129,7 @@
           </control>
         </control>
       </focusedlayout>
-      <content>
+      <content browse="true">
         <include>skinshortcuts-group-x1103</include>
       </content>
     </control>
@@ -254,7 +254,7 @@
           </control>
         </control>
       </focusedlayout>
-      <content>
+      <content browse="true">
         <include>skinshortcuts-group-x1101</include>
       </content>
     </control>
@@ -489,7 +489,7 @@
             <include>View_WatchedOverlay</include>
           </control>
         </focusedlayout>
-        <content target="$INFO[Skin.String($PARAM[skinsetting].target)]">$INFO[Skin.String($PARAM[skinsetting].path)]</content>
+        <content target="$INFO[Skin.String($PARAM[skinsetting].target)]" browse="true">$INFO[Skin.String($PARAM[skinsetting].path)]</content>
         <visible>Skin.String($PARAM[skinsetting].path)</visible>
       </control>
 </control>
@@ -796,7 +796,7 @@
       <control type="group">
 	<control type="grouplist" id="541">
 	<height>540</height>
-        <posy>560</posy>
+        <top>560</top>
 <!--        <animation effect="slide" end="0,50" condition="Control.HasFocus(54)">Conditional</animation>
         <animation effect="slide" end="0,500" time="500" condition="Control.HasFocus(540)">Conditional</animation> -->
           <visible>Control.HasFocus(54) | Control.HasFocus(540) | Control.HasFocus(5403) | Control.HasFocus(5404) | Control.HasFocus(5405) | ControlGroup(541).HasFocus</visible>
@@ -854,7 +854,7 @@
       <!-- My Apps -->
       <control type="group" id="551">
         <onup>55</onup>
-        <posy>200</posy>
+        <top>200</top>
         <control type="grouplist">
 	  <orientation>vertical</orientation>
           <onup>55</onup>
@@ -988,7 +988,7 @@
             <param name="text" value="$PARAM[text]" />
           </include>
         </focusedlayout>
-        <content target="$INFO[Skin.String($PARAM[skinsetting].target)]" sortby="year" sortorder="descending">$INFO[Skin.String($PARAM[skinsetting].path)]</content>
+        <content target="$INFO[Skin.String($PARAM[skinsetting].target)]" sortby="year" sortorder="descending" browse="true">$INFO[Skin.String($PARAM[skinsetting].path)]</content>
         <visible>Skin.String($PARAM[skinsetting].path)</visible>
       </control>
     </definition>
@@ -1138,7 +1138,7 @@
         </focusedlayout>
 -->
         <visible>Skin.String($PARAM[skinsetting].path)</visible>
-        <content limit="25" target="$INFO[Skin.String($PARAM[skinsetting].target)]" sortby="year" sortorder="descending">$INFO[Skin.String($PARAM[skinsetting].path)]</content>
+        <content limit="25" target="$INFO[Skin.String($PARAM[skinsetting].target)]" sortby="year" sortorder="descending" browse="true">$INFO[Skin.String($PARAM[skinsetting].path)]</content>
       </control>
     </definition>
   </include>
@@ -1308,7 +1308,7 @@
 
                 </focusedlayout>
 
-                <content>
+                <content browse="true">
       <include>skinshortcuts-group-$PARAM[group]</include>
                 </content>
 		</control>

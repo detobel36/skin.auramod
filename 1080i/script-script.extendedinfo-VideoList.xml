@@ -240,13 +240,13 @@
             <onfocus>SetFocus(500)</onfocus>
             <width>1</width>
             <height>1</height>
-            <posx>-1000</posx>
+            <left>-1000</left>
         </control>
         <control type="button" id="700">
             <onfocus>SetFocus(500)</onfocus>
             <width>1</width>
             <height>1</height>
-            <posx>-1000</posx>
+            <left>-1000</left>
         </control>
 
     </controls>

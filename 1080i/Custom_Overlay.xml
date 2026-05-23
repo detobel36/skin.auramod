@@ -7,8 +7,8 @@
         <!-- Window/Dialog debug -->
 
         <control type="grouplist">
-            <posx>15</posx>
-            <posy>15</posy>
+            <left>15</left>
+            <top>15</top>
             <width>780</width>
             <height>450</height>
             <itemgap>12</itemgap>
@@ -892,8 +892,8 @@
         <!-- Control label -->
 
         <control type="label">
-            <posx>15r</posx>
-            <posy>15</posy>
+            <left>15r</left>
+            <top>15</top>
             <width>780</width>
             <height>21</height>
             <textcolor>FF0000FF</textcolor>
@@ -907,8 +907,8 @@
         <!-- Path label -->
 
         <control type="label">
-            <posx>15r</posx>
-            <posy>48</posy>
+            <left>15r</left>
+            <top>48</top>
             <width>1620</width>
             <height>200</height>
             <textcolor>FFFF0000</textcolor>
@@ -921,7 +921,7 @@
 
         <control type="label">
             <left>15</left>
-            <posy>48r</posy>
+            <top>48r</top>
             <right>15</right>
             <height>21</height>
             <textcolor>FFFF0000</textcolor>

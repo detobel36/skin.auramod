@@ -613,7 +613,7 @@
             </control>
           </control>
         </focusedlayout>
-        <content limit="6" target="video">$VAR[Cast_Widget_Content_1505]</content>
+        <content limit="6" target="video" browse="true">$VAR[Cast_Widget_Content_1505]</content>
       </control>
     </control>
     <control type="group">
@@ -728,7 +728,7 @@
             </control>
           </control>
         </focusedlayout>
-        <content limit="6" target="video">$VAR[Cast_Widget_Content_1506]</content>
+        <content limit="6" target="video" browse="true">$VAR[Cast_Widget_Content_1506]</content>
       </control>
     </control>
     <control type="group">
@@ -960,7 +960,7 @@
             </control>
           </control>
         </focusedlayout>
-        <content target="videos" sortby="$VAR[spotlight_sortby]" sortorder="descending" limit="5">$PARAM[content]</content>
+        <content target="videos" sortby="$VAR[spotlight_sortby]" sortorder="descending" limit="5" browse="true">$PARAM[content]</content>
       </control>
       <control type="group">
         <animation effect="slide" start="0,0" end="0,20" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditonal</animation>
@@ -1000,7 +1000,7 @@
         <onfocus>SetFocus(505)</onfocus>
         <itemlayout width="1980" height="1080"></itemlayout>
         <focusedlayout width="1980" height="1080"></focusedlayout>
-        <content target="videos" sortby="$VAR[spotlight_sortby]" sortorder="descending" limit="5">$VAR[tvshowfullspotlightpath]</content>
+        <content target="videos" sortby="$VAR[spotlight_sortby]" sortorder="descending" limit="5" browse="true">$VAR[tvshowfullspotlightpath]</content>
       </control>
     </control>
   </include>
@@ -1116,7 +1116,7 @@
         <onfocus>SetFocus(506)</onfocus>
         <itemlayout width="1980" height="1080"></itemlayout>
         <focusedlayout width="1980" height="1080"></focusedlayout>
-        <content target="videos" sortby="$VAR[spotlight_sortby]" sortorder="descending" limit="5">$VAR[moviefullspotlightpath]</content>
+        <content target="videos" sortby="$VAR[spotlight_sortby]" sortorder="descending" limit="5" browse="true">$VAR[moviefullspotlightpath]</content>
       </control>
     </control>
   </include>
@@ -1332,7 +1332,7 @@
             </control>
          </control>
         </focusedlayout>
-        <content target="videos" sortby="$VAR[spotlight_sortby]" limit="5">$PARAM[content]</content>
+        <content target="videos" sortby="$VAR[spotlight_sortby]" limit="5" browse="true">$PARAM[content]</content>
       </control>
       <control type="group">
         <top>5</top>
@@ -2381,7 +2381,7 @@
         <left>10</left>
       <control type="grouplist">
         <top>-45</top>
-        <posx>10</posx>
+        <left>10</left>
         <visible>Container.Content(movies) | Container.Content(sets) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(videos) | Container.Content(seasons) | Window.IsVisible(script-script.extendedinfo-VideoList.xml) | $EXP[Exp_IsPluginAdvancedLauncher] | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(MyVideoNav.xml)</visible>
         <visible>!Container($PARAM[id]).ListItem.IsParentFolder</visible>
         <orientation>vertical</orientation>
@@ -2630,7 +2630,7 @@
         <left>10</left>
       <control type="grouplist">
         <top>-45</top>
-        <posx>10</posx>
+        <left>10</left>
         <visible>Container.Content(movies) | Container.Content(sets) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(videos) | Container.Content(seasons) | Window.IsVisible(script-script.extendedinfo-VideoList.xml) | $EXP[Exp_IsPluginAdvancedLauncher] | Window.IsVisible(DialogVideoInfo.xml)</visible>
         <visible>!Container($PARAM[id]).ListItem.IsParentFolder</visible>
         <orientation>vertical</orientation>
@@ -2889,17 +2889,17 @@
     </control>
   </include>
   <include name="Home_Widget_HubMenu_TVItems">
-    <content>
+    <content browse="true">
       <include>skinshortcuts-group-x1103</include>
     </content>
   </include>
   <include name="Home_Widget_HubMenu_MovieItems">
-    <content>
+    <content browse="true">
       <include>skinshortcuts-group-x1101</include>
     </content>
   </include>
   <include name="Home_Widget_SubMenu_Items">
-    <content>
+    <content browse="true">
       <include>skinshortcuts-submenu</include>
     </content>
   </include>
@@ -3344,10 +3344,10 @@
 
 
   <include name="Object_VideoInfo_CastList_Content_NextUp">
-    <content limit="3" sortby="playcount" sortorder="ascending">videodb://inprogresstvshows/$INFO[ListItem.DBID]/-2/?tvshowid=$INFO[ListItem.DBID]</content>
+    <content limit="3" sortby="playcount" sortorder="ascending" browse="true">videodb://inprogresstvshows/$INFO[ListItem.DBID]/-2/?tvshowid=$INFO[ListItem.DBID]</content>
   </include>
   <include name="Object_VideoInfo_CastList_Content">
-    <content limit="15">$PARAM[content]</content>
+    <content limit="15" browse="true">$PARAM[content]</content>
   </include>
   <include name="Object_VideoInfo_CastList_OnClick">
     <onclick>$PARAM[onclick]</onclick>
@@ -5906,7 +5906,7 @@
           </control>
           <include>Object_AlphabetStrip_Skipper</include>
         </focusedlayout>
-        <content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
+        <content browse="true">plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
       </control>
     </control>
   </include>
@@ -6503,7 +6503,7 @@
         <onup condition="[!Skin.HasSetting(DisableNetflixCatWidget) + Integer.IsGreater(Container(30222).NumItems,0)] + !String.IsEqual(Container(300).ListItem.Property(widgethub),true) | [String.IsEqual(Container(300).ListItem.Property(widgethub),true) + !Integer.IsGreater(Container(30221).NumItems,0)]">SetFocus(30222)</onup>
         <onup condition="Skin.HasSetting(DisableNetflixCatWidget) | !Integer.IsGreater(Container(30222).NumItems,0)">SetFocus(300)</onup>
         <left>30</left>
-        <posy>580</posy>
+        <top>580</top>
         <onleft>300</onleft>
         <ondown>3337</ondown>
         <onup condition="$EXP[TVSpotlight] + $EXP[noSubMenu]">SetFocus(1505)</onup>
@@ -7144,7 +7144,7 @@
             <label>$INFO[ListItem.Label2]</label>
           </control>
         </focusedlayout>
-        <content>
+        <content browse="true">
           <item id="1">
             <label>$INFO[Window(Home).Property(NextAired.1.Label)]$INFO[Window(Home).Property(NextAired.1.NextSeasonNumber), (S,]$INFO[Window(Home).Property(NextAired.1.NextEpisodeNumber),E,)]</label>
             <label2>$INFO[Window(Home).Property(NextAired.1.NextDay)] at $INFO[Window(Home).Property(NextAired.1.ShortTime)]</label2>
@@ -7376,7 +7376,7 @@
         <onclick>Skin.SetString(osdCustomSearchTerm,$INFO[Skin.String(TempSearchHistory)])</onclick>
         <onclick>1009</onclick>
         <visible>String.IsEmpty(Skin.String(osdCustomSearchTerm))</visible>
-        <content>$VAR[searchhistory]</content>
+        <content browse="true">$VAR[searchhistory]</content>
       </include>
       <include content="Search_Suggestions_Container">
         <param name="id" value="1007" />
@@ -7385,7 +7385,7 @@
         <onclick condition="!String.IsEmpty(Skin.String(osdCustomSearchTerm))">Skin.SetString(osdCustomSearchTerm,$INFO[ListItem.Label])</onclick>
         <onclick condition="String.IsEmpty(Skin.String(osdCustomSearchTerm))">SetFocus(5600)</onclick>
         <visible>!$EXP[IsActualKeyboardActive] + !String.IsEmpty(Skin.String(osdCustomSearchTerm))</visible>
-        <content>$VAR[SearchAutoCompleteContentProvider]</content>
+        <content browse="true">$VAR[SearchAutoCompleteContentProvider]</content>
       </include>
     </control>
     <include condition="!String.IsEmpty(Skin.String(CustomSearchTerm))">search_widgets</include>
@@ -8320,7 +8320,7 @@
         <onclick condition="String.IsEqual(Container.ListItem.Label,$LOCALIZE[31923]) | [String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924]) + Integer.IsLess(Window(Home).Property(Container($PARAM[id]).WidgetPage),2)]">SetFocus($PARAM[id],0,absolute)</onclick>
         <onclick condition="String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924]) + !Integer.IsLess(Window(Home).Property(Container($PARAM[id]).WidgetPage),2)">SetFocus($PARAM[id],1,absolute)</onclick>
         <visible>$PARAM[visible] + [Integer.IsGreater(Container($PARAM[id]).NumItems,0) | Container($PARAM[id]).IsUpdating | Container(300).OnNext | Container(300).OnPrevious | String.IsEmpty(Window(Home).Property(WidgetLoading))]</visible>
-        <content>
+        <content browse="true">
             <item>
                 <label>$LOCALIZE[31923]</label>
                 <icon>special://home/addons/plugin.video.themoviedb.helper/resources/icons/themoviedb/nextpage.png</icon>
@@ -8356,7 +8356,7 @@
           <param name="tmdbwidgetonfocus" value="$PARAM[tmdbwidgetonfocus]" />
           <param name="browse" value="$PARAM[browse]" />
         </include>
-        <content>
+        <content browse="true">
             <item>
                 <label>$LOCALIZE[31924]</label>
                 <icon>special://home/addons/plugin.video.themoviedb.helper/resources/icons/themoviedb/nextpage.png</icon>
@@ -8661,7 +8661,7 @@
                   </control>
                 </control>
               </focusedlayout>
-              <content>
+              <content browse="true">
                 <include>skinshortcuts-group-$PARAM[group]</include>
               </content>
             </control>
@@ -8769,7 +8769,7 @@
             </control>
           </control>
         </focusedlayout>
-        <content>
+        <content browse="true">
           <include>skinshortcuts-group-$PARAM[skinshortcut]</include>
         </content>
       </control>
@@ -8777,7 +8777,7 @@
         <include>Animation_Right</include>
         <animation effect="slide" end="-480,0" time="500" delay="100" condition="ControlGroup(5055).HasFocus">Conditional</animation>
         <left>480</left>
-        <posy>620</posy>
+        <top>620</top>
         <width>100%</width>
         <onleft>505</onleft>
         <onback>505</onback>
@@ -8972,7 +8972,7 @@
             </control>
           </control>
         </focusedlayout>
-        <content>
+        <content browse="true">
           <item>
             <label>$LOCALIZE[31723]</label> <!-- Interface -->
             <onclick>ActivateWindow(InterfaceSettings)</onclick>
@@ -9090,7 +9090,7 @@
             </control>
           </control>
         </focusedlayout>
-        <content>
+        <content browse="true">
           <item>
             <label>$LOCALIZE[31730]</label> <!-- Menu &amp; Widgets -->
             <onclick condition="System.HasAddon(script.skinshortcuts)">RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
@@ -9214,7 +9214,7 @@
             </control>
           </control>
         </focusedlayout>
-        <content>
+        <content browse="true">
           <item>
             <label>$LOCALIZE[31737]</label> <!-- Skin Settings -->
             <onclick>ActivateWindow(skinsettings)</onclick>
@@ -9303,7 +9303,7 @@
 
   <include name="similar_movies_list">
       <control type="list" id="12341">
-	<content sortby="random">$INFO[Skin.String(similarmovies.path)]</content>
+	<content sortby="random" browse="true">$INFO[Skin.String(similarmovies.path)]</content>
 	<autoscroll time="120000">true</autoscroll> <!-- Time to show each image, in milliseconds -->
 	<itemlayout />
 	<focusedlayout />
@@ -9311,7 +9311,7 @@
   </include>
   <include name="similar_tv_list">
       <control type="list" id="12342">
-        <content sortby="random" limit="15">$INFO[Skin.String(similartv.path)]</content>
+        <content sortby="random" limit="15" browse="true">$INFO[Skin.String(similartv.path)]</content>
         <autoscroll time="120000">true</autoscroll> <!-- Time to show each image, in milliseconds -->
         <itemlayout />
         <focusedlayout />
@@ -9590,15 +9590,15 @@
           </control>
         </control>
       </focusedlayout>
-      <content>
+      <content browse="true">
           <item>
               <label>$LOCALIZE[31923]</label>
               <thumb>special://home/addons/plugin.video.themoviedb.helper/resources/icons/themoviedb/nextpage.png</thumb>
               <visible>Skin.HasSetting(VideoInfo.Pagination) + Integer.IsGreaterOrEqual(Window(Home).Property($PARAM[widgetpage_prop]),2)</visible>
           </item>
       </content>
-      <content target="videos" sortby="episode" sortorder="ascending">$PARAM[content]</content>
-      <content>
+      <content target="videos" sortby="episode" sortorder="ascending" browse="true">$PARAM[content]</content>
+      <content browse="true">
           <item>
               <label>$LOCALIZE[31924]</label>
               <thumb>special://home/addons/plugin.video.themoviedb.helper/resources/icons/themoviedb/nextpage.png</thumb>

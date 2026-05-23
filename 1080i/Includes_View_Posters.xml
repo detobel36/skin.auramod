@@ -762,7 +762,7 @@
 
      <control type="group"> 
           <visible>[Control.HasFocus(300) | Control.HasFocus(511) | Control.HasFocus(5057)] +  !Container(511).ListItem.IsParentFolder</visible>
-	  <posy>90</posy>
+	  <top>90</top>
            <control type="group">
 		<visible>Container(5057).IsUpdating</visible>
                 <height>170</height>
@@ -803,7 +803,7 @@
             <param name="orientation" value="vertical" />
             <param name="posters" default="true" />
           </include>
-          <content target="videos">$INFO[Container(511).ListItem.FolderPath]</content>
+          <content target="videos" browse="true">$INFO[Container(511).ListItem.FolderPath]</content>
         </control>
        </control>
       </control>
@@ -842,7 +842,7 @@
 
      <control type="group"> 
           <visible>[Control.HasFocus(300) | Control.HasFocus(510) | Control.HasFocus(5056)] +  !Container(510).ListItem.IsParentFolder</visible>
-	  <posy>90</posy>
+	  <top>90</top>
 
            <control type="group">
 		<visible>Container(5056).IsUpdating</visible>
@@ -886,7 +886,7 @@
             <param name="orientation" value="vertical" />
             <param name="landscape_small" default="true" />
           </include>
-          <content target="videos" sortby="year" sortorder="descending" condition="Container(510).OnNext">$INFO[Container(510).ListItem.FolderPath]</content>
+          <content target="videos" sortby="year" sortorder="descending" condition="Container(510).OnNext" browse="true">$INFO[Container(510).ListItem.FolderPath]</content>
         </control>
        </control>
       </control>
@@ -1002,7 +1002,7 @@
           <animation effect="slide" end="-450,0" time="500" condition="Control.HasFocus(5056)">Conditional</animation>
           <visible>[Control.HasFocus(300) | Control.HasFocus(506) | Control.HasFocus(5056)] +  !Container(506).ListItem.IsParentFolder</visible>
           <animation effect="fade" start="100" end="0" condition="Container(5056).IsUpdating">Conditional</animation>
-	  <posy>540</posy>
+	  <top>540</top>
 
       <control type="panel" id="5056">
 	<visible>Control.IsVisible(506) + !String.Contains(Container(506).ListItem.Label,Search) + !String.Contains(Container(506).ListItem.Label,Sign Out) + !String.Contains(Container(506).ListItem.Label,Settings) + !String.Contains(Container(506).ListItem.Label,Switch User)</visible>
@@ -1048,7 +1048,7 @@
             <param name="text" value="$PARAM[text]" />
           </include>
         </focusedlayout>
-          <content target="videos" sortby="year" sortorder="descending">$INFO[Container(506).ListItem.FolderPath]</content>
+          <content target="videos" sortby="year" sortorder="descending" browse="true">$INFO[Container(506).ListItem.FolderPath]</content>
         </control>
        </control>
       </control>
@@ -1169,7 +1169,7 @@
           <animation effect="slide" end="-430,0" time="500" condition="Control.HasFocus(5055)">Conditional</animation>
           <visible>[Control.HasFocus(300) | Control.HasFocus(505) | Control.HasFocus(5055)] +  !Container(505).ListItem.IsParentFolder</visible>
           <animation effect="fade" start="100" end="0" condition="Container(5055).IsUpdating">Conditional</animation>
-	  <posy>540</posy>
+	  <top>540</top>
       <control type="fixedlist" id="5055">
 	<visible>Control.IsVisible(505) + !String.Contains(Container(505).ListItem.Label,Search)</visible>
         <onleft>504</onleft>
@@ -1212,7 +1212,7 @@
             <param name="text" value="$PARAM[text]" />
           </include>
         </focusedlayout>
-          <content target="videos" sortby="year" sortorder="descending">$INFO[ListItem.FolderPath]</content>
+          <content target="videos" sortby="year" sortorder="descending" browse="true">$INFO[ListItem.FolderPath]</content>
         </control>
 
 
@@ -1504,7 +1504,7 @@
               </control>
             </control>
           </focusedlayout>
-          <content target="videos" sortby="episode" sortorder="ascending">$INFO[Container(507).ListItem.FolderPath]</content>
+          <content target="videos" sortby="episode" sortorder="ascending" browse="true">$INFO[Container(507).ListItem.FolderPath]</content>
         </control>
       </control>
     </control>
@@ -1778,7 +1778,7 @@
               </control>
             </control>
           </focusedlayout>
-          <content target="videos" sortby="episode" sortorder="ascending">$INFO[Container(504).ListItem.FolderPath]</content>
+          <content target="videos" sortby="episode" sortorder="ascending" browse="true">$INFO[Container(504).ListItem.FolderPath]</content>
         </control>
       </control>
     </control>
@@ -1791,7 +1791,7 @@
       <control type="group">
         <include condition="Skin.HasSetting(DisableNetflixView)">View_Pad</include>
         <include condition="!Skin.HasSetting(DisableNetflixView)">Object_Episodes_Info</include>
-	<posy>50</posy>
+	<top>50</top>
         <control type="list" id="502">
           <top>30</top>
           <left>40</left>

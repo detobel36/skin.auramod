@@ -128,7 +128,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<content target="video">plugin://plugin.video.themoviedb.helper/?info=cast&amp;type=$VAR[osdcasttype]&amp;query=$VAR[osdcast]</content>
+				<content target="video" browse="true">plugin://plugin.video.themoviedb.helper/?info=cast&amp;type=$VAR[osdcasttype]&amp;query=$VAR[osdcast]</content>
 			</control>
 			<control type="label">
 				<include content="ItemLeft" condition="![Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">

@@ -77,7 +77,7 @@
           </control>
         </control>
       </focusedlayout>
-      <content>
+      <content browse="true">
         <include>skinshortcuts-group-x1102</include>
       </content>
     </control>
@@ -85,7 +85,7 @@
       <include>Animation_Right</include>
       <animation effect="slide" end="-520,0" time="500" delay="100" condition="ControlGroup(5055).HasFocus">Conditional</animation>
       <left>520</left>
-      <posy>620</posy>
+      <top>620</top>
       <width>100%</width>
       <onleft>505</onleft>
       <onback>505</onback>

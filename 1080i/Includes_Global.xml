@@ -11,7 +11,7 @@
             <onfocus>ClearProperty(WidgetFocus,Home)</onfocus>
             <itemlayout width="10" />
             <focusedlayout width="10" />
-            <content><include>skinshortcuts-submenu</include></content>
+            <content browse="true"><include>skinshortcuts-submenu</include></content>
             <visible>Skin.HasSetting(HideSubmenuWidget)</visible>
         </control>
         <control type="list" id="300">
@@ -39,7 +39,7 @@
             <top>-1000</top>
             <itemlayout width="10" />
             <focusedlayout width="10" />
-            <content><include>skinshortcuts-mainmenu</include></content>
+            <content browse="true"><include>skinshortcuts-mainmenu</include></content>
         </control>
         <control type="button" id="430">
             <width>1</width>

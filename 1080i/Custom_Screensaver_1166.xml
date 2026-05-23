@@ -5,8 +5,8 @@
   <controls>
     <control type="list" id="1543">
       <orientation>horizontal</orientation>
-      <content sortby="random" limit="5">$INFO[Skin.String(screensaver.auramod.path)]</content>
-      <content sortby="random" limit="5">$INFO[Skin.String(screensaver.auramod.tvpath)]</content>
+      <content sortby="random" limit="5" browse="true">$INFO[Skin.String(screensaver.auramod.path)]</content>
+      <content sortby="random" limit="5" browse="true">$INFO[Skin.String(screensaver.auramod.tvpath)]</content>
       <autoscroll time="22000">true</autoscroll>
       <!-- Time to show each image, in milliseconds -->
       <ondown>Action(Back)</ondown>

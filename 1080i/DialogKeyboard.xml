@@ -517,7 +517,7 @@
                             </control>
                         </control>
                     </focusedlayout>
-                    <content>plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=9</content>
+                    <content browse="true">plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=9</content>
                 </control>
 
                 <control type="panel" id="8000">
@@ -570,7 +570,7 @@
                             </control>
                         </control>
                     </focusedlayout>
-                    <content>plugin://plugin.video.themoviedb.helper/?fanarttv=True&amp;info=dir_search&amp;nextpage=True&amp;type=movie$INFO[Skin.String(kbtemp)]</content>
+                    <content browse="true">plugin://plugin.video.themoviedb.helper/?fanarttv=True&amp;info=dir_search&amp;nextpage=True&amp;type=movie$INFO[Skin.String(kbtemp)]</content>
                 </control>
             </control>
         </control>

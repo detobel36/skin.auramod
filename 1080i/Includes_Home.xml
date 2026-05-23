@@ -120,7 +120,7 @@
         </control>
     </include>
     <include name="Home_MainMenu_GlobalSearch">
-        <content>
+        <content browse="true">
             <item>
                 <icon>special://skin/extras/icons/search.png</icon>
                 <label>$LOCALIZE[137]</label>
@@ -377,7 +377,7 @@
         </control>
       </focusedlayout>
 
-        <content>
+        <content browse="true">
         <include>skinshortcuts-mainmenu</include>
         </content>
    </include>
@@ -493,7 +493,7 @@
                 </control>
             </control>
         </focusedlayout>
-		<content>
+		<content browse="true">
 		<include>skinshortcuts-mainmenu</include>
 		</content>
 	</control>
@@ -758,7 +758,7 @@
           </control>
         </control>
       </focusedlayout>
-	<content>
+	<content browse="true">
 	   <item>
             <label>$LOCALIZE[31685]</label> <!-- Home -->
             <onclick>activatewindow(Home)</onclick>
@@ -821,7 +821,7 @@
           </control>
         </control>
       </focusedlayout>
-	<content>
+	<content browse="true">
           <item id="1">
           <label>$LOCALIZE[31685]</label> <!-- Home -->
           <onclick>activatewindow(Home)</onclick>
@@ -938,7 +938,7 @@
         </focusedlayout>
     </include>
     <include name="Home_MainMenu_Items">
-        <content><include>skinshortcuts-mainmenu</include></content>
+        <content browse="true"><include>skinshortcuts-mainmenu</include></content>
     </include>
 
     <include name="Home_SubMenu_Layout_icon">
@@ -1015,7 +1015,7 @@
     </include>
 
     <include name="Home_SubMenu_Items">
-        <content><include>skinshortcuts-submenu</include></content>
+        <content browse="true"><include>skinshortcuts-submenu</include></content>
     </include>
 
     <include name="Home_Textbar_Texture">
@@ -1062,8 +1062,8 @@
         <animation effect="slide" time="200" end="-60,0" condition="[!Control.HasFocus(300) + !Control.HasFocus(302) + !Control.HasFocus(3901) + !Control.HasFocus(3902) + !Control.HasFocus(3903) + Skin.HasSetting(DisableNetflixHomeSidemenuHide)] +  ![Window.IsVisible(SettingsSystemInfo.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(SettingsProfile.xml)]">Conditional</animation>
 
             <control type="group">
-                <posy>0</posy>
-                <posx>0</posx>
+                <top>0</top>
+                <left>0</left>
                 <width>385</width>
                 <height>100%</height>
                 <control type="image">
@@ -1090,8 +1090,8 @@
              <visible>!Skin.HasSetting(DisableMenuVertLabelBG)</visible>
             <visible>!Skin.HasSetting(DisableNetflixHomeSidemenuHide) + ![Control.HasFocus(300) | Control.HasFocus(302) | Control.HasFocus(3901) | Control.HasFocus(3902) | Control.HasFocus(3903) | Control.HasFocus(3904)]</visible>
             <control type="group">
-                <posy>0</posy>
-                <posx>0</posx>
+                <top>0</top>
+                <left>0</left>
                 <width>385</width>
                 <height>100%</height>
                 <control type="image">
