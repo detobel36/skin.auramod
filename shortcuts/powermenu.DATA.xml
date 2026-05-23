@@ -55,7 +55,7 @@
         <label>20046</label>
         <altlabel>20045</altlabel>
         <usealttexture>!System.IsMaster</usealttexture>
-        <action>xbmc.mastermode</action>
+        <action>MasterMode</action>
         <visible>System.HasLocks</visible>
         <icon>special://skin/extras/icons/power.png</icon>
     </shortcut>

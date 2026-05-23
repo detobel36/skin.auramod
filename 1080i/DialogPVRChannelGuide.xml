@@ -31,8 +31,8 @@
                 </control>
             </control>
             <control type="image">
-                <posx>498</posx>
-                <posy>28</posy>
+                <left>498</left>
+                <top>28</top>
                 <width>128</width>
                 <height>64</height>
                 <aspectratio align="right">keep</aspectratio>

@@ -475,7 +475,7 @@
     <propertydefault labelID="tvshows" property="widgetspotlight">true</propertydefault>
 
     <!-- Favourites -->
-    <override action="ActivateWindow(Favourites)">
+    <override action="ActivateWindow(favouritesbrowser)">
         <action>ActivateWindow(favouritesbrowser)</action>
     </override>
 

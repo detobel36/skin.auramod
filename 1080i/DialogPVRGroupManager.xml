@@ -18,7 +18,7 @@
 
 
             <control type="grouplist" id="9000">
-                <posx>30</posx>
+                <left>30</left>
                 <top>100</top>
                 <itemgap>10</itemgap>
                 <orientation>vertical</orientation>
@@ -65,21 +65,21 @@
 
             <control type="group">
                 <description>Group list</description>
-                <posx>360</posx>
+                <left>360</left>
                 <top>100</top>
                 <width>423</width>
                 <control type="label" id="20">
                     <description>Name label</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>100%</width>
                     <align>center</align>
                     <height>84</height>
                     <font>font_tiny_bold</font>
                 </control>
                 <control type="list" id="13">
-                    <posx>0</posx>
-                    <posy>84</posy>
+                    <left>0</left>
+                    <top>84</top>
                     <width>423</width>
                     <height>672</height>
                     <onleft>9000</onleft>
@@ -144,16 +144,16 @@
                 <width>423</width>
                 <control type="label" id="21">
                     <description>Name label</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>100%</width>
                     <align>center</align>
                     <height>84</height>
                     <font>font_tiny_bold</font>
                 </control>
                 <control type="list" id="11">
-                    <posx>0</posx>
-                    <posy>84</posy>
+                    <left>0</left>
+                    <top>84</top>
                     <width>423</width>
                     <height>672</height>
                     <onleft>13</onleft>
@@ -218,16 +218,16 @@
                 <width>423</width>
                 <control type="label" id="22">
                     <description>Name label</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>100%</width>
                     <align>center</align>
                     <height>84</height>
                     <font>font_tiny_bold</font>
                 </control>
                 <control type="list" id="12">
-                    <posx>0</posx>
-                    <posy>84</posy>
+                    <left>0</left>
+                    <top>84</top>
                     <width>423</width>
                     <height>672</height>
                     <onleft>11</onleft>

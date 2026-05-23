@@ -18,12 +18,12 @@
             </control>
 
             <control type="group" id="8000">
-                <posx>30</posx>
+                <left>30</left>
                 <top>100</top>
                 <width>1230</width>
                 <control type="list" id="20">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>600</width>
                     <height>756</height>
                     <onup>20</onup>
@@ -99,7 +99,7 @@
                 </control>
                 <control type="grouplist" id="8002">
                     <right>0</right>
-                    <posy>0</posy>
+                    <top>0</top>
                     <width>600</width>
                     <height>756</height>
                     <onleft>20</onleft>
@@ -159,7 +159,7 @@
                         <label>19267</label>
                     </control>
                     <control type="button" id="30">
-                        <posy>84</posy>
+                        <top>84</top>
                         <description>Group Manager Button</description>
                         <width>600</width>
                         <height>74</height>

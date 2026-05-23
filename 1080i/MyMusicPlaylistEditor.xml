@@ -15,7 +15,7 @@
             <include content="Topbar_Menu_Layout">
                 <param name="visible" value="true" />
             </include>
-            <content>
+            <content browse="true">
                 <item>
                     <label>$INFO[Control.GetLabel(6)]</label>
                     <onclick>SendClick(6)</onclick>

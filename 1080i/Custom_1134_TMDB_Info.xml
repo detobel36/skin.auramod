@@ -28,7 +28,7 @@
          <onfocus condition="String.IsEmpty(Window(Home).Property(TMDbHelper.Path.Current))">Action(Close)</onfocus>
       <itemlayout />
       <focusedlayout />
-      <content limit="1" target="videos">$INFO[Window(Home).Property(TMDbHelper.Path.Current)]</content>
+      <content limit="1" target="videos" browse="true">$INFO[Window(Home).Property(TMDbHelper.Path.Current)]</content>
     </control>
     <control type="group">
       <visible>[!String.Contains(Window(Home).Property(TMDbHelper.Path.Current),type=person) | Control.HasFocus(9999)] + !Window.IsVisible(DialogVideoInfo.xml)</visible>
@@ -116,7 +116,7 @@
                 <itemlayout />
                 <focusedlayout />
                 <include>Defs_Hidden_Button</include>
-                <content>$INFO[Window(Home).Property(TMDbHelper.Path.Current)]</content>
+                <content browse="true">$INFO[Window(Home).Property(TMDbHelper.Path.Current)]</content>
               </control>
             </control>
           </control>

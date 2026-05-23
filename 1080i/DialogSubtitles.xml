@@ -53,7 +53,7 @@
                 <itemlayout height="69" width="1300">
                     <control type="image">
                         <left>11</left>
-                        <posy>12</posy>
+                        <top>12</top>
                         <width>44</width>
                         <height>44</height>
                         <texture fallback="DefaultAddonNone.png">subs/$INFO[ListItem.Thumb].png</texture>
@@ -121,7 +121,7 @@
                     </control>
                     <control type="image">
                         <left>11</left>
-                        <posy>12</posy>
+                        <top>12</top>
                         <width>44</width>
                         <height>44</height>
                         <texture fallback="DefaultAddonNone.png">subs/$INFO[ListItem.Thumb].png</texture>

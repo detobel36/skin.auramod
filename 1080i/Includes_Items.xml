@@ -110,7 +110,7 @@
 	</include>
 
     <include name="Items_OSD_Settings">
-        <content>
+        <content browse="true">
             <item>
                 <icon />
                 <label>$LOCALIZE[298]</label>
@@ -148,7 +148,7 @@
     </include>
 
     <include name="Items_OSD_MusicVis">
-        <content>
+        <content browse="true">
             <!-- Show artist slideshow -->
             <item>
                 <label>$LOCALIZE[108]: $LOCALIZE[16041]</label>
@@ -235,7 +235,7 @@
     </include>
 
     <include name="Items_Settings">
-        <content>
+        <content browse="true">
             <item id="1">
                 <label>[CAPITALIZE]$LOCALIZE[14207][/CAPITALIZE]</label>
                 <icon>special://skin/extras/icons/skinsettings.png</icon>
@@ -303,7 +303,7 @@
     </include>
 
     <include name="Items_Info">
-        <content>
+        <content browse="true">
             <!-- Play -->
             <item>
                 <label>$INFO[Control.GetLabel(8)]</label>
@@ -407,7 +407,7 @@
     </include>
 
     <include name="Items_Weather">
-        <content>
+        <content browse="true">
             <!-- Next -->
             <item>
                 <label>$LOCALIZE[31217]</label>
@@ -458,7 +458,7 @@
     </include>
 
     <include name="Items_ExtendedInfo">
-        <content>
+        <content browse="true">
             <!-- Trakt -->
             <item>
                 <label>$INFO[Control.GetLabel(9009)]</label>
@@ -477,7 +477,7 @@
     </include>
 
     <include name="Items_AddonsInfo">
-        <content>
+        <content browse="true">
             <!-- use -->
             <item>
                 <label>$INFO[Control.GetLabel(12)]</label>
@@ -556,7 +556,7 @@
     </include>
 
     <include name="Items_View">
-        <content>
+        <content browse="true">
             <!-- Group -->
             <item>
                 <label>$INFO[Control.GetLabel(28)]</label>
@@ -771,7 +771,7 @@
     </include>
 
     <include name="Items_NextAired">
-        <content>
+        <content browse="true">
             <item>
                 <icon>special://skin/extras/icons/settings.png</icon>
                 <label>$LOCALIZE[10140]</label>
@@ -782,7 +782,7 @@
     </include>
 
     <include name="Items_GlobalSearch">
-        <content>
+        <content browse="true">
             <item>
                 <icon>special://skin/extras/icons/search.png</icon>
                 <label>$LOCALIZE[137]</label>
@@ -792,7 +792,7 @@
     </include>
 
     <include name="Items_Playlist">
-        <content>
+        <content browse="true">
             <!-- Sort -->
             <item>
                 <label>$INFO[Control.GetLabel(3)]</label>
@@ -853,11 +853,11 @@
     </include>
 
     <include name="Items_MainMenu">
-        <content><include>skinshortcuts-mainmenu</include></content>
+        <content browse="true"><include>skinshortcuts-mainmenu</include></content>
     </include>
 
     <include name="Items_SubMenu">
-        <content><include>skinshortcuts-submenu</include></content>
+        <content browse="true"><include>skinshortcuts-submenu</include></content>
     </include>
 
     <variable name="Items_LockUnlock_Icon">

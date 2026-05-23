@@ -68,7 +68,7 @@
 							<visible>Control.HasFocus(2)</visible>
 						</control>
 					</focusedlayout>
-					<content>
+					<content browse="true">
 						<item>
 							<label>$LOCALIZE[31787]</label> <!-- Addons -->
 							<onclick>Dialog.Close(all,true)</onclick>
@@ -156,7 +156,7 @@
 							<visible>Control.HasFocus(6)</visible>
 						</control>
 					</focusedlayout>
-					<content>
+					<content browse="true">
                         <include>skinshortcuts-group-powermenu</include>
 
 					</content>
@@ -224,7 +224,7 @@
 							<visible>Control.HasFocus(7)</visible>
 						</control>
 					</focusedlayout>
-					<content>
+					<content browse="true">
                                                 <item>
                                                         <label>$LOCALIZE[31682]</label> <!-- Main Menu Config -->
                                                         <onclick>Dialog.Close(all,true)</onclick>
@@ -319,7 +319,7 @@
 							<label>$INFO[ListItem.Label]</label> 
 						</control>
 					</focusedlayout>
-					<content>
+					<content browse="true">
 						<item id="3">
 							<label>$LOCALIZE[33060]</label>
 							<thumb>dialogs/charms/charm_shutdown.png</thumb>
@@ -456,7 +456,7 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </focusedlayout>
-                    <content><include>skinshortcuts-group-powermenu</include></content>
+                    <content browse="true"><include>skinshortcuts-group-powermenu</include></content>
                 </control>
             </control>
         </control>

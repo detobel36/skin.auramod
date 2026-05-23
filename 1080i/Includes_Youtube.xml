@@ -7,8 +7,8 @@
                                 <texture colordiffuse="$VAR[YoutubeBackground]">special://home/addons/plugin.video.youtube/fanart.jpg</texture>
                         </control>
 			<control type="button" id="1">
-				<posx>190</posx>
-				<posy>62</posy>
+				<left>190</left>
+				<top>62</top>
 				<width>1430</width>
 				<height>75</height>
 				<ondown>2</ondown>
@@ -50,8 +50,8 @@
 				<animation type="WindowClose" reversible="true">
 					<effect type="fade" start="100" end="100" tween="cubic" easing="out" time="50" />
 				</animation>
-				<posx>190</posx>
-				<posy>62</posy>
+				<left>190</left>
+				<top>62</top>
 				<width>1430</width>
 				<height>75</height>
 				<texture>custom/search.png</texture>
@@ -63,8 +63,8 @@
 				<animation type="WindowClose" reversible="true">
 					<effect type="fade" start="100" end="100" tween="cubic" easing="out" time="50" />
 				</animation>
-				<posx>190</posx>
-				<posy>62</posy>
+				<left>190</left>
+				<top>62</top>
 				<width>1430</width>
 				<height>75</height>
 				<texture>custom/search2.png</texture>
@@ -73,7 +73,7 @@
 
 			<control type="list" id="2">
 				<top>140</top>
-				<posx>190</posx>
+				<left>190</left>
 				<width>74%</width>
 				<height>40</height>
 				<onup>1</onup>
@@ -119,7 +119,7 @@
 						<visible>!Control.HasFocus(2)</visible>
 					</control>
 				</focusedlayout>
-				<content target="videos">plugin://plugin.video.youtube/kodion/search/list/</content>
+				<content target="videos" browse="true">plugin://plugin.video.youtube/kodion/search/list/</content>
 			</control>
 		</control>
 
@@ -248,7 +248,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content target="videos">plugin://plugin.video.youtube/special/popular_right_now/</content>
+					<content target="videos" browse="true">plugin://plugin.video.youtube/special/popular_right_now/</content>
 				</control>
 				</control>
 
@@ -374,7 +374,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content target="videos">plugin://plugin.video.youtube/special/live/</content>
+					<content target="videos" browse="true">plugin://plugin.video.youtube/special/live/</content>
 				</control>
 				</control>
 
@@ -501,7 +501,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content target="videos">plugin://plugin.video.youtube/subscriptions/list/</content>
+					<content target="videos" browse="true">plugin://plugin.video.youtube/subscriptions/list/</content>
 				</control>
 				</control>
 
@@ -627,7 +627,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content target="videos">plugin://plugin.video.youtube/special/recommendations/</content>
+					<content target="videos" browse="true">plugin://plugin.video.youtube/special/recommendations/</content>
 				</control>
 				</control>
 
@@ -756,7 +756,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content target="videos">plugin://plugin.video.youtube/special/watch_history_tv/</content>
+					<content target="videos" browse="true">plugin://plugin.video.youtube/special/watch_history_tv/</content>
 				</control>
 			</control>
 			</control>

@@ -17,13 +17,13 @@
     <control type="list" id="90001">
       <itemlayout />
       <focusedlayout />
-      <content>$VAR[DetailsContent_1505]</content>
+      <content browse="true">$VAR[DetailsContent_1505]</content>
       <visible>!Integer.IsEqual(Container(1505).NumItems,0) + !Container(1505).IsUpdating</visible>
     </control>
     <control type="list" id="90002">
       <itemlayout />
       <focusedlayout />
-      <content>$VAR[DetailsContent_1506]</content>
+      <content browse="true">$VAR[DetailsContent_1506]</content>
       <visible>!Integer.IsEqual(Container(1506).NumItems,0) + !Container(1506).IsUpdating</visible>
     </control>
     <include>Animation_Right</include>
@@ -1944,12 +1944,12 @@
         <visible>!Skin.HasSetting(DisableMenuHor)</visible>
       </control>
       <control type="group" id="950">
-        <posx>20</posx>
-        <posy>100</posy>
+        <left>20</left>
+        <top>100</top>
         <animation effect="zoom" start="0,0" end="115,107" time="0" reversible="true" condition="Control.IsVisible(901)">Conditional</animation>
         <control type="group" id="902">
           <description>Currently Airing</description>
-          <posx>339</posx>
+          <left>339</left>
           <control type="button" id="9021">
             <onup>Control.Move(9022,-1)</onup>
             <ondown>Control.Move(9022,1)</ondown>
@@ -1958,15 +1958,15 @@
             <onclick condition="!String.IsEmpty(Container(9022).ListItem.FilenameAndPath)">PlayMedia($INFO[Container(9022).ListItem.FilenameAndPath])</onclick>
           </control>
           <control type="image">
-            <posx>-5</posx>
-            <posy>-5</posy>
+            <left>-5</left>
+            <top>-5</top>
             <width>703</width>
             <height>582</height>
             <texture border="7">windows/home/tile.png</texture>
           </control>
           <control type="wraplist" id="9022">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>693</width>
             <height>573</height>
             <onup>925</onup>
@@ -1981,24 +1981,24 @@
             <itemlayout width="693" height="115">
               <control type="image">
                 <description>Channel underlay</description>
-                <posx>0</posx>
-                <posy>-1</posy>
+                <left>0</left>
+                <top>-1</top>
                 <width>700</width>
                 <height>113</height>
                 <texture>windows/common/black.png</texture>
                 <colordiffuse>62FFFFFF</colordiffuse>
               </control>
               <control type="image">
-                <posx>15</posx>
-                <posy>10</posy>
+                <left>15</left>
+                <top>10</top>
                 <width>92</width>
                 <height>92</height>
                 <aspectratio align="center">keep</aspectratio>
                 <texture>$INFO[ListItem.Icon]</texture>
               </control>
               <control type="label">
-                <posx>130</posx>
-                <posy>2</posy>
+                <left>130</left>
+                <top>2</top>
                 <width>535</width>
                 <height>40</height>
                 <info>ListItem.Label</info>
@@ -2007,8 +2007,8 @@
                 <align></align>
               </control>
               <control type="label">
-                <posx>130</posx>
-                <posy>26</posy>
+                <left>130</left>
+                <top>26</top>
                 <width>535</width>
                 <height>60</height>
                 <label>$LOCALIZE[19030]: $INFO[ListItem.Title]</label>
@@ -2019,8 +2019,8 @@
                 <align></align>
               </control>
               <control type="label">
-                <posx>130</posx>
-                <posy>59</posy>
+                <left>130</left>
+                <top>59</top>
                 <width>535</width>
                 <height>60</height>
                 <label>$INFO[ListItem.NextStartTime]: $INFO[ListItem.NextTitle]</label>
@@ -2034,24 +2034,24 @@
             <focusedlayout width="693" height="115">
               <control type="image">
                 <description>Channel underlay</description>
-                <posx>0</posx>
-                <posy>-1</posy>
+                <left>0</left>
+                <top>-1</top>
                 <width>700</width>
                 <height>113</height>
                 <texture background="true">white.png</texture>
                 <colordiffuse>62287BA8</colordiffuse>
               </control>
               <control type="image">
-                <posx>15</posx>
-                <posy>10</posy>
+                <left>15</left>
+                <top>10</top>
                 <width>92</width>
                 <height>92</height>
                 <aspectratio align="center">keep</aspectratio>
                 <texture>$INFO[ListItem.Icon]</texture>
               </control>
               <control type="label">
-                <posx>130</posx>
-                <posy>2</posy>
+                <left>130</left>
+                <top>2</top>
                 <width>535</width>
                 <height>40</height>
                 <info>ListItem.Label</info>
@@ -2060,8 +2060,8 @@
                 <align></align>
               </control>
               <control type="label">
-                <posx>130</posx>
-                <posy>26</posy>
+                <left>130</left>
+                <top>26</top>
                 <width>535</width>
                 <height>60</height>
                 <label>$LOCALIZE[19030]: $INFO[ListItem.Title]</label>
@@ -2071,8 +2071,8 @@
                 <align></align>
               </control>
               <control type="label">
-                <posx>130</posx>
-                <posy>59</posy>
+                <left>130</left>
+                <top>59</top>
                 <width>535</width>
                 <height>60</height>
                 <label>$INFO[ListItem.NextStartTime]: $INFO[ListItem.NextTitle]</label>
@@ -2082,22 +2082,22 @@
                 <align></align>
               </control>
             </focusedlayout>
-            <content sortby="lastplayed" sortorder="descending" target="pvr" limit="20">pvr://channels/tv/*</content>
+            <content sortby="lastplayed" sortorder="descending" target="pvr" limit="20" browse="true">pvr://channels/tv/*</content>
           </control>
           <control type="group" id="9023">
             <visible>!Integer.IsGreater(Container(9022).NumItems,0) + !Container(9022).IsUpdating</visible>
             <control type="image">
               <description>Loading Back</description>
-              <posx>313</posx>
-              <posy>212</posy>
+              <left>313</left>
+              <top>212</top>
               <width>148</width>
               <height>148</height>
               <texture>windows/home/loading-back.png</texture>
             </control>
             <control type="image">
               <description>Loading</description>
-              <posx>313</posx>
-              <posy>212</posy>
+              <left>313</left>
+              <top>212</top>
               <width>148</width>
               <height>148</height>
               <texture>windows/home/loading.png</texture>
@@ -2105,8 +2105,8 @@
             </control>
             <control type="image">
               <description>Title overlay</description>
-              <posx>0</posx>
-              <posy>508</posy>
+              <left>0</left>
+              <top>508</top>
               <width>693</width>
               <height>64</height>
               <colordiffuse>99000000</colordiffuse>
@@ -2114,8 +2114,8 @@
             </control>
             <control type="label">
               <description>Loading label</description>
-              <posx>20</posx>
-              <posy>508</posy>
+              <left>20</left>
+              <top>508</top>
               <height>64</height>
               <width>693</width>
               <font>Font-Condensed-S31-B</font>
@@ -2127,8 +2127,8 @@
             </control>
           </control>
           <control type="label">
-            <posx>0</posx>
-            <posy>576</posy>
+            <left>0</left>
+            <top>576</top>
             <width>573</width>
             <height>25</height>
             <font>Font-Condensed-S20-B</font>
@@ -2144,8 +2144,8 @@
             <visible>Integer.IsGreater(Container(9022).NumItems,0)</visible>
             <control type="image">
               <description>Scrollbar background</description>
-              <posx>471</posx>
-              <posy>585</posy>
+              <left>471</left>
+              <top>585</top>
               <width>96</width>
               <height>6</height>
               <texture border="1">views/other/scrollbar-sq.png</texture>
@@ -2153,8 +2153,8 @@
             </control>
             <control type="scrollbar" id="9024">
               <description>Scrollbar</description>
-              <posx>471</posx>
-              <posy>585</posy>
+              <left>471</left>
+              <top>585</top>
               <width>96</width>
               <height>6</height>
               <orientation>horizontal</orientation>
@@ -2166,8 +2166,8 @@
         </control>
         <control type="panel" id="901">
           <onfocus>SetProperty(SpotFocus,true,Home)</onfocus>
-          <posx>26</posx>
-          <posy>-24</posy>
+          <left>26</left>
+          <top>-24</top>
           <width>331</width>
           <height>620</height>
           <onleft>Control.Move(20,-1)</onleft>
@@ -2181,39 +2181,39 @@
             <control type="group">
               <animation effect="fade" end="90" time="0" condition="true">Conditional</animation>
               <control type="image">
-                <posx>19</posx>
-                <posy>19</posy>
+                <left>19</left>
+                <top>19</top>
                 <width>293</width>
                 <height>293</height>
                 <texture border="7">windows/home/tile.png</texture>
                 <visible>!Skin.HasSetting(HideHomeColouredTiles)</visible>
               </control>
               <control type="image">
-                <posx>19</posx>
-                <posy>19</posy>
+                <left>19</left>
+                <top>19</top>
                 <width>293</width>
                 <height>293</height>
                 <texture border="7">windows/home/tile-red.png</texture>
                 <visible>Skin.HasSetting(HideHomeColouredTiles)</visible>
               </control>
               <control type="image">
-                <posx>24</posx>
-                <posy>241</posy>
+                <left>24</left>
+                <top>241</top>
                 <width>283</width>
                 <height>66</height>
                 <texture border="1">windows/home/tile-overlay.png</texture>
                 <colordiffuse>99FFFFFF</colordiffuse>
               </control>
               <control type="image">
-                <posx>24</posx>
-                <posy>24</posy>
+                <left>24</left>
+                <top>24</top>
                 <width>283</width>
                 <height>283</height>
                 <texture>$INFO[ListItem.Icon]</texture>
               </control>
               <control type="label">
-                <posx>24</posx>
-                <posy>241</posy>
+                <left>24</left>
+                <top>241</top>
                 <width>283</width>
                 <height>66</height>
                 <label>$INFO[ListItem.Label]</label>
@@ -2228,8 +2228,8 @@
           <focusedlayout width="289" height="289">
             <control type="group">
               <control type="image">
-                <posx>3</posx>
-                <posy>3</posy>
+                <left>3</left>
+                <top>3</top>
                 <width>325</width>
                 <height>325</height>
                 <texture border="40">windows/home/tile-fo.png</texture>
@@ -2250,32 +2250,32 @@
                   <effect type="fade" start="100" end="90" time="200" tween="sine" easing="out" />
                 </animation>
                 <control type="image">
-                  <posx>19</posx>
-                  <posy>19</posy>
+                  <left>19</left>
+                  <top>19</top>
                   <width>293</width>
                   <height>293</height>
                   <texture border="7">windows/home/tile.png</texture>
                   <visible>Skin.HasSetting(HideHomeColouredTiles)</visible>
                 </control>
                 <control type="image">
-                  <posx>19</posx>
-                  <posy>19</posy>
+                  <left>19</left>
+                  <top>19</top>
                   <width>293</width>
                   <height>293</height>
                   <texture border="7">windows/home/tile-red.png</texture>
                   <visible>!Skin.HasSetting(HideHomeColouredTiles)</visible>
                 </control>
                 <control type="image">
-                  <posx>24</posx>
-                  <posy>241</posy>
+                  <left>24</left>
+                  <top>241</top>
                   <width>283</width>
                   <height>66</height>
                   <texture border="1">windows/home/tile-overlay.png</texture>
                   <colordiffuse>99FFFFFF</colordiffuse>
                 </control>
                 <control type="image">
-                  <posx>24</posx>
-                  <posy>24</posy>
+                  <left>24</left>
+                  <top>24</top>
                   <width>283</width>
                   <height>283</height>
                   <texture>$INFO[ListItem.Icon]</texture>
@@ -2285,8 +2285,8 @@
                   </animation>
                 </control>
                 <control type="label">
-                  <posx>24</posx>
-                  <posy>241</posy>
+                  <left>24</left>
+                  <top>241</top>
                   <width>246</width>
                   <height>66</height>
                   <label>$INFO[ListItem.Label]</label>
@@ -2299,7 +2299,7 @@
               </control>
             </control>
           </focusedlayout>
-          <content>
+          <content browse="true">
             <item id="1">
               <label>$LOCALIZE[19069]</label>
               <icon>windows/home/icons/epg.png</icon>
@@ -2313,8 +2313,8 @@
           </content>
         </control>
         <control type="panel" id="903">
-          <posx>1014</posx>
-          <posy>-24</posy>
+          <left>1014</left>
+          <top>-24</top>
           <width>662</width>
           <height>620</height>
           <onleft>902</onleft>
@@ -2327,15 +2327,15 @@
             <control type="group">
               <animation effect="fade" end="90" time="0" condition="true">Conditional</animation>
               <control type="image">
-                <posx>19</posx>
-                <posy>19</posy>
+                <left>19</left>
+                <top>19</top>
                 <width>293</width>
                 <height>293</height>
                 <texture border="7">windows/home/tile.png</texture>
               </control>
               <control type="image">
-                <posx>24</posx>
-                <posy>241</posy>
+                <left>24</left>
+                <top>241</top>
                 <width>283</width>
                 <height>66</height>
                 <texture border="1">windows/home/tile-overlay.png</texture>
@@ -2366,8 +2366,8 @@
           <focusedlayout width="289" height="289">
             <control type="group">
               <control type="image">
-                <posx>3</posx>
-                <posy>3</posy>
+                <left>3</left>
+                <top>3</top>
                 <width>325</width>
                 <height>325</height>
                 <texture border="40">windows/home/tile-fo.png</texture>
@@ -2388,15 +2388,15 @@
                   <effect type="fade" start="100" end="90" time="200" tween="sine" easing="out" />
                 </animation>
                 <control type="image">
-                  <posx>19</posx>
-                  <posy>19</posy>
+                  <left>19</left>
+                  <top>19</top>
                   <width>293</width>
                   <height>293</height>
                   <texture border="7">windows/home/tile.png</texture>
                 </control>
                 <control type="image">
-                  <posx>24</posx>
-                  <posy>241</posy>
+                  <left>24</left>
+                  <top>241</top>
                   <width>283</width>
                   <height>66</height>
                   <texture border="1">windows/home/tile-overlay.png</texture>
@@ -2429,13 +2429,13 @@
               </control>
             </control>
           </focusedlayout>
-          <content>
+          <content browse="true">
             <include>skinshortcuts-group-pvrspot</include>
           </content>
         </control>
         <control type="image">
-          <posx>318</posx>
-          <posy>-21</posy>
+          <left>318</left>
+          <top>-21</top>
           <width>725</width>
           <height>614</height>
           <texture border="40">windows/home/tile-fo.png</texture>
@@ -2597,7 +2597,7 @@
             </control>
           </control>
         </focusedlayout>
-        <content>
+        <content browse="true">
           <include>widget_settings_items</include>
         </content>
       </control>

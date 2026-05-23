@@ -711,8 +711,8 @@
                     <pagecontrol>8060</pagecontrol>
                     <rulerlayout height="74" width="262">
                         <control type="label" id="2">
-                            <posx>0</posx>
-                            <posy>36</posy>
+                            <left>0</left>
+                            <top>36</top>
                             <width>262</width>
                             <align>left</align>
                             <aligny>top</aligny>

@@ -44,17 +44,17 @@
       <orientation>vertical</orientation>
       <itemlayout />
       <focusedlayout />
-      <content><include>skinshortcuts-template-global-fanart</include></content>
+      <content browse="true"><include>skinshortcuts-template-global-fanart</include></content>
     </control>
     <control type="list" id="9987">
       <description>hidden container for submenu widget count</description>
       <include>Defs_Hidden_List</include>
-      <content><include>skinshortcuts-submenu</include></content>
+      <content browse="true"><include>skinshortcuts-submenu</include></content>
     </control>
     <control type="list" id="9988">
       <description>hidden container for playlist background</description>
-      <posx>-20</posx>
-      <posy>-20</posy>
+      <left>-20</left>
+      <top>-20</top>
       <width>1</width>
       <height>1</height>
       <visible>true</visible>
@@ -65,7 +65,7 @@
       <autoscroll time="10000">true</autoscroll>
       <itemlayout width="1" height="1"></itemlayout>
       <focusedlayout height="1" width="1"></focusedlayout>
-      <content>$INFO[Container(300).ListItem.Property(backgroundPlaylist)]</content>
+      <content browse="true">$INFO[Container(300).ListItem.Property(backgroundPlaylist)]</content>
     </control>
     <!--Multi Image fadelabel and Global Background -->
     <include condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">fanart_multi</include>
