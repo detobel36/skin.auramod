@@ -9250,6 +9250,12 @@
             <onclick>ActivateWindow(10040,addons://dependencies/)</onclick>
             <icon>special://skin/extras/icons/bigbox.png</icon>
           </item>
+          <item>
+            <label>$ADDON[service.libreelec.settings 600]</label>
+            <onclick>RunScript(service.libreelec.settings)</onclick>
+            <icon>special://skin/extras/icons/libreelec.png</icon>
+            <visible>System.HasAddon(service.libreelec.settings)</visible>
+          </item>
         </content>
       </control>
     </control>
