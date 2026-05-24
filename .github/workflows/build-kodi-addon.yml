@@ -2,8 +2,13 @@ name: Build Kodi Addon
 
 on:
   push:
+    branches:
+      - '**'
+
     tags:
       - 'v*'
+
+  pull_request:
 
   workflow_dispatch:
 
@@ -17,12 +22,26 @@ jobs:
 
       - name: Read addon info
         id: addon
+        shell: bash
         run: |
           ADDON_ID=$(grep -oP 'id="\K[^"]+' addon.xml | head -1)
           VERSION=$(grep -oP 'version="\K[^"]+' addon.xml | head -1)
 
+          if [[ -z "$ADDON_ID" ]]; then
+            echo "Failed to read addon id from addon.xml"
+            exit 1
+          fi
+
+          if [[ -z "$VERSION" ]]; then
+            echo "Failed to read version from addon.xml"
+            exit 1
+          fi
+
+          SHORT_SHA=$(git rev-parse --short HEAD)
+
           echo "addon_id=$ADDON_ID" >> $GITHUB_OUTPUT
           echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "short_sha=$SHORT_SHA" >> $GITHUB_OUTPUT
 
       - name: Prepare addon directory
         run: |
@@ -32,23 +51,29 @@ jobs:
             --exclude ".git" \
             --exclude ".github" \
             --exclude "build" \
+            --exclude "dist" \
             --exclude "__pycache__" \
             --exclude "*.pyc"
 
       - name: Create ZIP package
+        shell: bash
         run: |
           mkdir -p dist
 
+          ZIP_NAME="${{ steps.addon.outputs.addon_id }}-${{ steps.addon.outputs.version }}-${{ steps.addon.outputs.short_sha }}.zip"
+
           cd build
 
-          zip -r \
-            ../dist/${{ steps.addon.outputs.addon_id }}-${{ steps.addon.outputs.version }}.zip \
-            ${{ steps.addon.outputs.addon_id }}
+          zip -r "../dist/$ZIP_NAME" \
+            "${{ steps.addon.outputs.addon_id }}"
 
-      - name: Upload artifact
+          echo "Created ZIP:"
+          ls -lah ../dist
+
+      - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: kodi-addon
+          name: kodi-addon-${{ steps.addon.outputs.short_sha }}
           path: dist/*.zip
 
       - name: Create GitHub Release
